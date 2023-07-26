@@ -22,17 +22,10 @@ public class Uzivatel {
         return prijmeni;
     }
 
-    public int getVek() {
-        return vek;
-    }
-
-    public int getTelefon() {
-        return telefonniCislo;
-    }
     // pomoci metody override prevedeme na text, jinak by nam kod vyhazoval spatne udaje
 
     @Override
     public String toString(){
-        return "Jmeno: " + getJmeno() + " " + "Prijmeni: " + getPrijmeni() + " " + "Vek: " + getVek() + " " + "Telefon: " + getTelefon();
+        return String.format("Jmeno: %s Prijmeni: %s Vek: %d Telefon: %d", jmeno, prijmeni,vek,telefonniCislo);
     }
 }
